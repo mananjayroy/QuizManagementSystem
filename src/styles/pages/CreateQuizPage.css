@@ -1,0 +1,33 @@
+/** @format */
+
+.create-quiz-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+form .form-group,
+.question-block {
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.question-block {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-right: 10px;
+}

@@ -1,0 +1,166 @@
+.user-table button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem; /* Bigger size */
+  font-size: 1rem; /* Larger text */
+  border: none;
+  border-radius: 0.375rem; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Edit button styling */
+.user-table button.btn-warning {
+  background-color: #0d6efd; /* Bootstrap primary blue */
+  color: white;
+}
+
+.user-table button.btn-warning:hover {
+  background-color: #0b5ed7;
+}
+
+/* Delete button styling */
+.user-table button.btn-danger {
+  background-color: #dc3545; /* Bootstrap danger red */
+  color: white;
+}
+
+.user-table button.btn-danger:hover {
+  background-color: #bb2d3b;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* or 100vh */
+}
+
+.bouncing-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.bouncing-dots > div {
+  width: 16px;
+  height: 16px;
+  background-color: #3498db;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite ease-in-out;
+}
+
+.bouncing-dots > div:nth-child(1) {
+  animation-delay: 0s;
+}
+.bouncing-dots > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bouncing-dots > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  width: 48%;
+  padding: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-actions button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-actions button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.edit-user-model{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+.edit-user-model-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.edit-user-model-content input, select, option {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-user-model-content h4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+}
+
+

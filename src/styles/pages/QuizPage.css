@@ -1,0 +1,148 @@
+/* Quiz layout */
+.quiz-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Main quiz content area */
+.quiz-body {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.quiz-body h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Question text */
+.quiz-body p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Options block */
+.options {
+  margin: 1.5rem 0;
+}
+
+.option {
+  display: block;
+  background: #f1f1f1;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.option:hover {
+  background: #e0e0e0;
+}
+
+.option input {
+  margin-right: 0.75rem;
+}
+
+/* Buttons */
+.quiz-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.quiz-buttons button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quiz-buttons button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.quiz-buttons button:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+/* Result section */
+.result {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.result h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+
+/* Summary section */
+.summary {
+  margin-top: 2rem;
+}
+
+.summary-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+/* Correct/Incorrect highlight */
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+/* Back to Dashboard button */
+.result button {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.result button:hover {
+  background-color: #218838;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quiz-layout {
+    flex-direction: column;
+  }
+
+  .quiz-body {
+    padding: 1rem;
+  }
+
+  .quiz-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

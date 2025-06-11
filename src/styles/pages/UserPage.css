@@ -1,0 +1,86 @@
+
+.userpage-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome message */
+.userpage-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+/* User details */
+.userpage-container p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Quiz container */
+.quiz-container {
+  margin-top: 2rem;
+}
+
+.quiz-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+/* Responsive quiz card layout */
+.quiz-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Optional: style if you are using QuizCard CSS, but add hover effect */
+.quiz-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #fafafa;
+  transition: box-shadow 0.2s ease;
+}
+
+.quiz-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Button inside quiz card (if needed) */
+.quiz-card button {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.quiz-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .userpage-container {
+    padding: 1rem;
+  }
+
+  .userpage-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .quiz-container {
+    grid-template-columns: 1fr;
+  }
+}
