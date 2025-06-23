@@ -2,7 +2,9 @@
 
 A full-stack Quiz Management System built using **React** for the frontend and **Spring Boot** for the backend. It allows admins to create, update, and manage quizzes, while users can take quizzes and view their results.
 
+
 ---
+
 
 ## 🚀 Features
 
@@ -29,5 +31,5 @@ A full-stack Quiz Management System built using **React** for the frontend and *
 
 ---
 
-## 📁 Project Structure
+
 
